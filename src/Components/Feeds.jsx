@@ -25,7 +25,7 @@ const Feeds = (props) => {
                 return post.data();
             })
             setposts(allposts);
-            // console.log(allposts);
+            console.log(allposts,"all posts");
         });
     },[]);
 

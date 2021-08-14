@@ -52,7 +52,7 @@ const Login = (props) => {
     let classes = useStyles();
 
     useEffect(()=>{
-        // console.log(props);
+        console.log(props);
         if(props.user){
             props.history.push("/");
         }

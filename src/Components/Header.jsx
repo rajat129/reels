@@ -25,10 +25,12 @@ const Header = (props) => {
     let {signout,user} = useContext(AuthContext);
 
     useEffect(async () => {
+        console.log("here");
+
         let uid = user.uid;
         let doc = await firebaseDB.collection("users").doc(uid).get();
         let temp = doc.data();
-        // console.log(temp);
+        console.log(temp);
         setusername(temp);
     } , []);
 

@@ -30,7 +30,7 @@ export function App() {
     firebaseAuth.onAuthStateChanged(user1 => {
         
         setuser(user1);
-        
+        console.log(user1);
       })
   } , [user])
 

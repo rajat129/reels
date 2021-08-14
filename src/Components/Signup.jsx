@@ -37,7 +37,9 @@ const Signup = (props) => {
             }
             async function fun3(){
                 //main func
+                console.log("in fun3");
                 let profileimageurl = await uploadimage.snapshot.ref.getDownloadURL();
+                console.log(profileimageurl);
                 firebaseDB.collection("users").doc(uid).set({
                     email : email,
                     username : user,
