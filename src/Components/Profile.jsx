@@ -66,7 +66,7 @@ const Profile = () => {
             </div>
             <div className="right" className={classes.right}>
                 <h1>{userData ? userData.username : ""}</h1>
-                <h2>{userData ? userData.postsCreated.length : ""}  posts</h2>
+                <h2>{userData ? userData.postsCreated.length : ""}  photos</h2>
                 <Button variant="outlined" color="secondary" style={{marginTop:"10px"}}>Edit Profile</Button>
             </div>
         </div>
